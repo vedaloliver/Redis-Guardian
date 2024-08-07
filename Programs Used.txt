@@ -1,0 +1,26 @@
+Promotehus
+
+An open source monitoring and altering toolkit
+- values reliabilty and scalability
+- Collects and stores metrics as time series data 
+- PromQL query language
+- Altert
+
+
+Grafana 
+- Turns time series database data into dashboards
+- Creates and customize dashbaords for visualization
+-Extensible
+
+Redis Exporter
+- Collects an exports Redis metrics
+- Allows Prometheus to scrape and monitor Redis performance metrics
+
+Elasticsearch
+- RESTful search and analytics neginer which can store and search large volumes of data 
+- part of ELK stakc
+- Scalable horizontally fopr large data volumes
+-Proivdes full text search and analytics
+
+Kibana
+- 
