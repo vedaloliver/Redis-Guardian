@@ -1,13 +1,1 @@
-Infrastructure
-- Change the ps1 script to make an env and tfvars file as it has to be deleted when pushing up 
-- resolve why its not pushing up to azure
-- Attach the docker imagers to the aks and get it working remote
-- automate that
 
-Redis
-- Make it scalable
-- make it availalble
-- make it nicer and have more shit going on generally
-
-Python
-- do i need to do this?
