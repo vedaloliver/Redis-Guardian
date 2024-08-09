@@ -1,4 +1,4 @@
-<h1> Redis Server Cache Deployment with Kubernetes, Prometheus, and Grafana on Azure </h1>
+<h1> Redis Server Guardian </h1>
 
 <h3>Overview </h3>
 A deployment of a Redis server cache using Kubernetes, with extensive monitoring and visualization using Prometheus and Grafana. The infrastructure is provisioned on Azure using Terraform, ensuring a scalable, maintainable, and repeatable deployment process.
