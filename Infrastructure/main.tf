@@ -35,14 +35,12 @@ resource "azurerm_kubernetes_cluster" "aks" {
   default_node_pool {
     name       = "default"
     node_count = 1
-    vm_size    = "Standard_B2s" # Changed to a cost-effective option
+    vm_size    = "Standard_D4pds_v5"
   }
 
   identity {
     type = "SystemAssigned"
   }
-
-  depends_on = [azurerm_role_assignment.kv_access]
 }
 
 # Azure Key Vault
@@ -74,12 +72,7 @@ resource "azurerm_key_vault_secret" "redis_password" {
   key_vault_id = azurerm_key_vault.example.id
 }
 
-# Role Assignment for Key Vault Access
-resource "azurerm_role_assignment" "kv_access" {
-  principal_id         = data.azurerm_client_config.current.object_id
-  role_definition_name = "Key Vault Secrets User"
-  scope                = azurerm_key_vault.example.id
-}
+
 
 output "aks_cluster_name" {
   value = azurerm_kubernetes_cluster.aks.name
