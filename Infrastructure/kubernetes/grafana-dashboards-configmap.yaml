@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: grafana-dashboards
+data:
+  redis-dashboard.json: |
+    {
+      # Your Redis dashboard JSON configuration here
+    }
