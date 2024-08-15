@@ -1,0 +1,26 @@
+kubernetes_deployment.redis: Still creating... [9m51s elapsed]
+╷
+│ Error: execution halted
+│
+│
+╵
+╷
+│ Error: execution halted
+│
+│
+╵
+╷
+│ Error: authorization.RoleAssignmentsClient#Create: Failure responding to request: StatusCode=403 -- Original Error: autorest/azure: Service returned an error. Status=403 Code="AuthorizationFailed" Message="The client '9dd75707-0448-4b6a-be12-72ff3cc547a1' with object id '9dd75707-0448-4b6a-be12-72ff3cc547a1' does not have authorization to perform action 'Microsoft.Authorization/roleAssignments/write' over scope '/subscriptions/d6710a00-5b19-433b-8e4b-60d0cef773ee/resourceGroups/example-resources-oliver28305/providers/Microsoft.ContainerRegistry/registries/exampleacr28305/providers/Microsoft.Authorization/roleAssignments/eb1517bc-a4fe-222d-99ad-c38218e1f015' or the scope is invalid. If access was recently granted, please refresh your credentials."
+│
+│   with azurerm_role_assignment.aks_acr_pull,
+│   on main.tf line 133, in resource "azurerm_role_assignment" "aks_acr_pull":
+│  133: resource "azurerm_role_assignment" "aks_acr_pull" {
+│
+╵
+╷
+│ Error: Waiting for rollout to finish: 1 replicas wanted; 0 replicas Ready
+│
+│   with kubernetes_deployment.redis,
+│   on main.tf line 141, in resource "kubernetes_deployment" "redis":
+│  141: resource "kubernetes_deployment" "redis" {
+│
